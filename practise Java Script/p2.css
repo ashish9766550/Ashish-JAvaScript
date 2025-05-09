@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(134, 95, 132);
+}
+.todo{
+    background-color: rgb(85, 184, 184);
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+#task{
+    
+    width: 70%;
+    padding: 20px;
+}
+.add{
+    background-color: rgb(117, 199, 117);
+    padding: 20px;
+    font-style: italic;
+    cursor: pointer;
+    box-shadow:0px 2px 5px solid black ;
+
+}
+.add:hover{
+   opacity: 70%;
+}
+.remove{
+     background-color: rgb(117, 199, 117);
+    padding: 20px;
+    font-style: italic;
+    cursor: pointer;
+    box-shadow:0px 2px 5px solid black ;
+
+}
+.remove:hover{
+    opacity: 80%;
+}
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
