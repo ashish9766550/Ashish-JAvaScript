@@ -1,40 +1,71 @@
-body{
-    background-color: rgb(134, 95, 132);
+/* Base styles */
+body {
+  background-color: rgb(134, 95, 132);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
 }
-.todo{
-    background-color: rgb(85, 184, 184);
-    text-align: center;
-    margin: auto;
-    padding: 20px;
-}
-#task{
-    
-    width: 70%;
-    padding: 20px;
-}
-.add{
-    background-color: rgb(117, 199, 117);
-    padding: 20px;
-    font-style: italic;
-    cursor: pointer;
-    box-shadow:0px 2px 5px solid black ;
 
+/* Container styles */
+.todo {
+  background-color: rgb(85, 184, 184);
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.add:hover{
-   opacity: 70%;
-}
-.remove{
-     background-color: rgb(117, 199, 117);
-    padding: 20px;
-    font-style: italic;
-    cursor: pointer;
-    box-shadow:0px 2px 5px solid black ;
 
+/* Input field styles */
+#task {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
 }
-.remove:hover{
-    opacity: 80%;
+
+/* Button base styles */
+.add, .remove {
+  background-color: rgb(117, 199, 117);
+  padding: 12px 20px;
+  font-style: italic;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin: 0 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+/* Button hover states */
+.add:hover {
+  opacity: 0.7;
+  transform: translateY(1px);
+}
+
+.remove:hover {
+  opacity: 0.8;
+  transform: translateY(1px);
+}
+
+/* Completed task styling */
 .completed {
   text-decoration: line-through;
   color: gray;
+  opacity: 0.7;
+}
+
+/* Task list items */
+.task-item {
+  background-color: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
